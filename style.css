@@ -1,3 +1,9 @@
 #main-content{
     min-height: 500px;
 }
+
+@media (min-width: 767px) {
+    .vertical-line {
+        border-left: thin solid black;
+    }
+}
