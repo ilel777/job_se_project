@@ -42,7 +42,7 @@
     <!-- header start -->
     <header>
         <div class="jumbotron">
-            <div class="container">
+            <div class="container text-center">
                 <h1 class="display-3">Jumbo heading</h1>
                 <p class="lead">Jumbo helper text</p>
                 <hr class="my-2">
@@ -53,15 +53,15 @@
     <!-- header end -->
 
     <!-- main content start -->
-    <div class="container mb-5" style="min-height: 250px">
+    <div id="main-content" class="container mb-5" style="min-height: 250px">
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center py-5">
             <div class="col-md-10">
                 <form class="form-row">
-                    <div class="form-group justify-content-between col-md-8">
+                    <div class="form-group justify-content-between col-md-7">
                         <input type="password" name="search" id="search" class="form-control" placeholder="Cherchez Annonce" aria-describedby="helpId">
                     </div>
-                    <div class="form-group col-2">
+                    <div class="form-group col-md-3 col-sm-8">
                         <div class="form-group">
                           <select class="form-control" name="anonce_type" id="">
                             <option>Annonce Job</option>
@@ -70,7 +70,7 @@
                           </select>
                         </div>
                     </div>
-                    <div class="form-group col-2">
+                    <div class="form-group col-md-2 col-sm-4">
                         <button type="submit" class="btn btn-primary">Cherche</button>
                     </div>
                 </form>
