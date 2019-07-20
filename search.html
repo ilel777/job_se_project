@@ -22,14 +22,14 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Recherche</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./search.html">Recherche<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">A propos</a>
+                        <a class="nav-link" href="./aboutus.html">A propos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -59,12 +59,10 @@
     <!-- main content start -->
     <div id="main-content" class="container mb-5" style="min-height: 250px">
         
+        <!-- search bar start -->
         <div class="row justify-content-center py-5">
             <div class="col-md-10">
-                <h3 class="text-center">
-                    Chercher une annonce dès maintenent
-                </h3>
-                <form class="form-row" action="./search.html" method="GET">
+                <form class="form-row">
                     <div class="form-group justify-content-between col-md-7">
                         <input type="password" name="search" id="search" class="form-control" placeholder="Cherchez Annonce" aria-describedby="helpId">
                     </div>
@@ -81,14 +79,43 @@
                         <button type="submit" class="btn btn-primary">Cherche</button>
                     </div>
                 </form>
-                <hr>
-                <p class="display-4 text-center">Ou bien</p>
-                <h3 class="text-center">si vous etes un recruteur ou vous voulez plus de foncrionalite</h3>
-                <div class="justify-content-center d-flex">
-                    <a name="" id="" class="btn btn-primary" href="./login.html" role="button">Enregistrez Vous</a>
+            </div>
+        </div>
+        <!-- search bar end -->
+
+        <!-- search result start -->
+        <div class="row">
+            <div class="col-md-8">
+                <p class="single-post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nostrum ducimus sapiente veritatis natus quod voluptatibus officiis, quae beatae maxime optio? Dolorem exercitationem rerum molestiae quisquam quibusdam tenetur ut.</p>
+                <p class="single-post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nostrum ducimus sapiente veritatis natus quod voluptatibus officiis, quae beatae maxime optio? Dolorem exercitationem rerum molestiae quisquam quibusdam tenetur ut.</p>
+                <p class="single-post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nostrum ducimus sapiente veritatis natus quod voluptatibus officiis, quae beatae maxime optio? Dolorem exercitationem rerum molestiae quisquam quibusdam tenetur ut.</p>
+                <p class="single-post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nostrum ducimus sapiente veritatis natus quod voluptatibus officiis, quae beatae maxime optio? Dolorem exercitationem rerum molestiae quisquam quibusdam tenetur ut.</p>
+                <p class="single-post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga totam nostrum ducimus sapiente veritatis natus quod voluptatibus officiis, quae beatae maxime optio? Dolorem exercitationem rerum molestiae quisquam quibusdam tenetur ut.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="single-sidbar">
+                    <div class="form-group">
+                      <label for="category">Location</label>
+                      <select multiple class="form-control" name="category" id="category">
+                        <option>Casablanca</option>
+                        <option>Rabat</option>
+                        <option>Tanger</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="single-sidbar">
+                    <div class="form-group">
+                      <label for="category">Categorie</label>
+                      <select multiple class="form-control" name="category" id="category">
+                        <option>Technologie</option>
+                        <option>Devolopement</option>
+                        <option>Design</option>
+                      </select>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- search result end -->
     </div>
     <!-- main content end -->
 

@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="position-relative">
@@ -24,6 +24,9 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.html">Recherche<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">A propos</a>
@@ -57,64 +60,64 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="text-center">Login</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="login_email">Email</label>
-                                <input type="email" name="login_email" id="login_email" class="form-control"
-                                    placeholder="" aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="login_password">Mot de passe</label>
-                                <input type="password" name="login_password" id="login_password" class="form-control"
-                                    placeholder="" aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+                <form>
+                    <div class="form-group">
+                        <label for="login_email">Email</label>
+                        <input type="email" name="login_email" id="login_email" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="login_password">Mot de passe</label>
+                        <input type="password" name="login_password" id="login_password" class="form-control"
+                            placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
             </div>
             <div class="col-md-6 vertical-line">
                 <h2 class="text-center">Register</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="prenom">Prenom</label>
-                                <input type="text" name="prenom" id="prenom" class="form-control" placeholder=""
-                                    aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="nom">Nom</label>
-                                <input type="text" name="nom" id="nom" class="form-control" placeholder=""
-                                    aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="register_email">Email</label>
-                                <input type="email" name="register_email" id="register_email" class="form-control"
-                                    placeholder="" aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="register_password">Mot de passe</label>
-                                <input type="password" name="register_password" id="register_password"
-                                    class="form-control" placeholder="" aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="password_confirmation">Confirmation Mot de passe</label>
-                                <input type="password" name="password_confirmation" id="password_confirmation"
-                                    class="form-control" placeholder="" aria-describedby="helpId">
-                                <small id="helpId" class="text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                              <label for="acount_type">Type de compte</label>
-                              <select class="form-control" name="acount_type" id="acount_type">
-                                <option>condidat job, stage ou freelancer</option>
-                                <option>recruteur (societe)</option>
-                              </select>
-                            </div>
-                            <button type="submit" class="btn btn-success">Register</button>
-                        </form>
+                <form>
+                    <div class="form-group">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" name="prenom" id="prenom" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="register_email">Email</label>
+                        <input type="email" name="register_email" id="register_email" class="form-control"
+                            placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="register_password">Mot de passe</label>
+                        <input type="password" name="register_password" id="register_password" class="form-control"
+                            placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password_confirmation">Confirmation Mot de passe</label>
+                        <input type="password" name="password_confirmation" id="password_confirmation"
+                            class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="acount_type">Type de compte</label>
+                        <select class="form-control" name="acount_type" id="acount_type">
+                            <option>condidat job, stage ou freelancer</option>
+                            <option>recruteur (societe)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success">Register</button>
+                </form>
             </div>
         </div>
     </div>
@@ -122,45 +125,50 @@
 
     <!-- footer start -->
     <footer class="footer bg-light">
-            <div class="container">
-              <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
-                  <h5>Links</h5>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./aboutus.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="col-7 col-sm-5">
-                  <h5>Our Address</h5>
-                  <address>
-                121, Clear Water Bay Road<br>
-                Clear Water Bay, Kowloon<br>
-                HONG KONG<br>
-                <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">email@email.net</a>
-              </address>
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">email@email.net</a>
+                    </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
-                  <div class="text-center">
-                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
-                  </div>
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+                    </div>
                 </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <p>© Copyright 2018 "Todo"</p>
-                </div>
-              </div>
             </div>
-          </footer>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 "Todo"</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- footer end -->
 
     <!-- Optional JavaScript -->

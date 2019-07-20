@@ -1,6 +1,9 @@
 #main-content{
     min-height: 500px;
 }
+.single-post{
+    border: black solid 1px;
+}
 
 @media (min-width: 767px) {
     .vertical-line {
