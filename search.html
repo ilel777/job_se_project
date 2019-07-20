@@ -62,23 +62,61 @@
         <!-- search bar start -->
         <div class="row justify-content-center py-5">
             <div class="col-md-10">
-                <form class="form-row">
-                    <div class="form-group justify-content-between col-md-7">
-                        <input type="password" name="search" id="search" class="form-control" placeholder="Cherchez Annonce" aria-describedby="helpId">
+                <!-- search tab start -->
+                <ul class="nav nav-pills mb-3" id="form-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-candidat-tab" data-toggle="pill" href="#pills-candidat"
+                            role="tab" aria-controls="pills-candidat" aria-selected="true">Chercher Candidat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-annonce-tab" data-toggle="pill" href="#pills-annonce" role="tab"
+                            aria-controls="pills-annonce" aria-selected="false">Chercher Annonce</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-candidat" role="tabpanel"
+                        aria-labelledby="pills-candidat-tab">
+                        <form class="form-row" action="./search.html" method="GET">
+                            <div class="form-group justify-content-between col-md-7">
+                                <input type="text" name="search" id="search" class="form-control"
+                                    placeholder="Cherchez Candidat" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-3 col-sm-8">
+                                <div class="form-group">
+                                    <select class="form-control" name="anonce_type" id="">
+                                        <option>Candidat Job</option>
+                                        <option>Condidat Stage</option>
+                                        <option>Condidat Freelance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2 col-sm-4">
+                                <button type="submit" class="btn btn-primary">Cherche</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group col-md-3 col-sm-8">
-                        <div class="form-group">
-                          <select class="form-control" name="anonce_type" id="">
-                            <option>Annonce Job</option>
-                            <option>Annonce Stage</option>
-                            <option>Offre Freelance</option>
-                          </select>
-                        </div>
+                    <div class="tab-pane fade" id="pills-annonce" role="tabpanel" aria-labelledby="pills-annonce-tab">
+                        <form class="form-row" action="./search.html" method="GET">
+                            <div class="form-group justify-content-between col-md-7">
+                                <input type="text" name="search" id="search" class="form-control"
+                                    placeholder="Cherchez Annonce" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group col-md-3 col-sm-8">
+                                <div class="form-group">
+                                    <select class="form-control" name="anonce_type" id="">
+                                        <option>Annonce Job</option>
+                                        <option>Annonce Stage</option>
+                                        <option>Offre Freelance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2 col-sm-4">
+                                <button type="submit" class="btn btn-primary">Cherche</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group col-md-2 col-sm-4">
-                        <button type="submit" class="btn btn-primary">Cherche</button>
-                    </div>
-                </form>
+                </div>
+                <!-- search tab end -->
             </div>
         </div>
         <!-- search bar end -->
