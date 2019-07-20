@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>A Propos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,17 +22,17 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./search.html">Recherche<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">A propos</a>
+                        <a class="nav-link" href="./aboutus.html">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-link active" href="#">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -61,72 +61,50 @@
 
     <!-- main content start -->
     <div id="main-content" class="container mb-5" style="min-height: 250px">
-
-        <div class="row justify-content-center py-5">
-            <div class="col-md-10">
-                <!-- search tab start -->
-                <ul class="nav nav-pills mb-3" id="form-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-candidat-tab" data-toggle="pill" href="#pills-candidat"
-                            role="tab" aria-controls="pills-candidat" aria-selected="true">Chercher Candidat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-annonce-tab" data-toggle="pill" href="#pills-annonce" role="tab"
-                            aria-controls="pills-annonce" aria-selected="false">Chercher Annonce</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-candidat" role="tabpanel"
-                        aria-labelledby="pills-candidat-tab">
-                        <form class="form-row" action="./search.html" method="GET">
-                            <div class="form-group justify-content-between col-md-7">
-                                <input type="text" name="search" id="search" class="form-control"
-                                    placeholder="Cherchez Candidat" aria-describedby="helpId">
-                            </div>
-                            <div class="form-group col-md-3 col-sm-8">
-                                <div class="form-group">
-                                    <select class="form-control" name="anonce_type" id="">
-                                        <option>Candidat Job</option>
-                                        <option>Condidat Stage</option>
-                                        <option>Condidat Freelance</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-2 col-sm-4">
-                                <button type="submit" class="btn btn-primary">Cherche</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="tab-pane fade" id="pills-annonce" role="tabpanel" aria-labelledby="pills-annonce-tab">
-                        <form class="form-row" action="./search.html" method="GET">
-                            <div class="form-group justify-content-between col-md-7">
-                                <input type="text" name="search" id="search" class="form-control"
-                                    placeholder="Cherchez Annonce" aria-describedby="helpId">
-                            </div>
-                            <div class="form-group col-md-3 col-sm-8">
-                                <div class="form-group">
-                                    <select class="form-control" name="anonce_type" id="">
-                                        <option>Annonce Job</option>
-                                        <option>Annonce Stage</option>
-                                        <option>Offre Freelance</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-2 col-sm-4">
-                                <button type="submit" class="btn btn-primary">Cherche</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- search tab end -->
-                <hr>
-                <h3 class="text-center">Pour postuler à un emploi, stage ou une offre freelance</h3>
-                <div class="justify-content-center d-flex pt-2">
-                    <a name="" id="" class="btn btn-primary btn-lg" href="./login.html" role="button">Enregistrez Vous</a>
-                </div>
+        <div class="row d-flex mb-5 contact-info">
+            <div class="col-md-12 mb-4">
+                <h2 class="h3">Contact Information</h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-3">
+                <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            </div>
+            <div class="col-md-3">
+                <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            </div>
+            <div class="col-md-3">
+                <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <p><span>Website</span> <a href="#">yoursite.com</a></p>
             </div>
         </div>
-    </div>
+        <div class="row block-9">
+            <div class="col-md-6 order-md-last d-flex">
+                <form action="#" class="bg-white p-5 contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+    
+            </div>
+    
+            <div class="col-md-6 d-flex">
+                <div id="map" class="bg-white"></div>
+            </div>
+        </div>
     <!-- main content end -->
 
     <!-- footer start -->
